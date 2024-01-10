@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      button {
+        position: relative;
+        cursor: pointer;
+        padding: 10px 20px;
+        font-size: 16px;
+      }
+
+      button:hover {
+        position: absolute;
+        left: 10px;
+        background-color: aqua;
+        animation: myHoverAnim 4s infinite alternate;
+      }
+
+      @keyframes myHoverAnim {
+        0% {
+          left: 10px;
+          background-color: aqua;
+        }
+        15% {
+          background-color: lightsalmon;
+        }
+        30% {
+          background-color: red;
+        }
+        100% {
+          background-color: lightpink;
+        }
+      }
+    </style>
+    <title>Animation Button</title>
+  </head>
+  <body>
+    <button>Hover to blink</button>
+  </body>
+</html>
